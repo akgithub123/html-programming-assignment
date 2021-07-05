@@ -1,0 +1,11 @@
+ssh-keygen -t rsa -C "shendeakshay123@gmail.com"
+/c/Users/Neova-Akshay/.ssh/id_rsa_personal_project
+
+ssh-add ~/.ssh/id_rsa_personal_project
+
+Host github-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_personal_project
+
+git@github-personal:akgithub123/html-programming-assignment.git
